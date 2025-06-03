@@ -1,46 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>curriculo</title>
+    <title>Currículo - Lorenzo Scalssavara</title>
     <style>
-    body{
-        background-color: rgb(0, 41, 77);
-    }
-    h1{
-        text-align: center;
-        color: aliceblue;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    h2{
-        color: aliceblue;
-        font-size: 30px;
-    }
-    h3{
-        color: bisque;
-        font-size: 20px;
-    }
-    p{
-        color: aliceblue;
-        font-size: 20px;
-    }
-
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            margin: 20px 0 10px;
+            color: #444;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #333;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #555;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        
+        .info-item {
+            margin-bottom: 15px;
+        }
+        
+        .info-item h3 {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        
+        .info-item p {
+            margin-top: 5px;
+            color: #666;
+        }
+        
+        @media (max-width: 600px) {
+            header {
+                padding: 40px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
     </style>
-    <h1>Meu curriculo</h1>
-    <h2>Contato: 99999-9999</h2>
-    <h2>email: <a href="mailto:exemplo@gmail.com">exemplo@gmail.com</a></h2>
-    <h3>formaçao:</h3>
-    <p>Curso de informatica profissional</p>
-    <p>cursos alura programaçao</p>
-    <h3>escolaridade:</h3>
-    <p>2° ano ensino medio profissional ceep desenvolvimento de sistemas</p>
-    <h3>Me apresentando:</h3>
-    <p>sou um entusiasta automotivo, estou me especializando em injeçao eletronica e sonho em trabalhar com calibraçao de motor e performance automotiva, sou muito bom com hardware,sei dirigir.</p>
-
-    
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Currículo</h1>
+            <p>Lorenzo Scalssavara</p>
+        </div>
+    </header>
     
+    <div class="container">
+        <section class="section">
+            <h2>Informações Pessoais</h2>
+            <div class="info-item">
+                <h3>Nome</h3>
+                <p>Lorenzo Scalssavara</p>
+            </div>
+            <div class="info-item">
+                <h3>Email</h3>
+                <p>scalssavaralorenzo@gmail.com</p>
+            </div>
+            <div class="info-item">
+                <h3>Telefone</h3>
+                <p>(45)99845-16XX</p>
+            </div>
+            <div class="info-item">
+                <h3>Endereço</h3>
+                <p>cascavel paraná</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Formação Acadêmica</h2>
+            <div class="info-item">
+                <h3>Desenvolvimento de Sistemas</h3>
+                <p>Master cursos, informatica profissional, colegio Ceep pedro boaretto neto</p>
+            </div>
+            <div class="info-item">
+                <h3>Planejamento: Engenharia Mecânica</h3>
+                <p>Pretendo ingressar em breve nesta formação para complementar meus conhecimentos</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Objetivos Profissionais</h2>
+            <div class="info-item">
+                <p>Me tornar piloto de testes automotivos, unindo minha paixão por veículos com meus conhecimentos em desenvolvimento de sistemas e futura formação em engenharia mecânica.</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Habilidades</h2>
+            <div class="info-item">
+                <h3>Técnicas</h3>
+                <p>Programação, Lógica de Sistemas, Conhecimentos básicos de mecânica automotiva</p>
+            </div>
+            <div class="info-item">
+                <h3>Pessoais</h3>
+                <p>Dedicado, curioso, apaixonado por aprendizado, bom trabalho em equipe</p>
+            </div>
+        </section>
+        
+        <a href="index.html" class="btn">Voltar ao Site</a>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Lorenzo Scalssavara. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
